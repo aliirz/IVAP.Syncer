@@ -1,0 +1,8 @@
+﻿<Window x:Class="IVAP.Syncer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IVAP Syncer" Height="350" Width="525">
+    <Grid>
+        <TextBlock Height="21" HorizontalAlignment="Left" Margin="193,101,0,0" Name="textBlock1" Text="Tirah Rapid Assessment " VerticalAlignment="Top" Width="125" />
+    </Grid>
+</Window>
