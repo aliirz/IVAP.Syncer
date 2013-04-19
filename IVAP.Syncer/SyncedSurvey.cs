@@ -26,6 +26,9 @@ namespace IVAP.Syncer
         [CsvField(Name = "IDP:IO:DistrictF")]
         public string DistrictF { get; set; }
 
+        [CsvField(Name = "IDP:IO:TehsilF")]
+        public string TehsilF { get; set; }
+
         [CsvField(Name = "IDP:IO:IO3b")]
         public string IO3b { get; set; }
 

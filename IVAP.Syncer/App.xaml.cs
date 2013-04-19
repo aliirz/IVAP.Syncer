@@ -13,6 +13,10 @@ namespace IVAP.Syncer
     /// </summary>
     public partial class App : Application
     {
-        //Map em here
+
+        public App()
+        {
+            Mapper.CreateMap<Survey, SyncedSurvey>();
+        }
     }
 }
