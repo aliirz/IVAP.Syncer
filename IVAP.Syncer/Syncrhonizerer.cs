@@ -758,6 +758,181 @@ namespace IVAP.Syncer
                 {
                     s.P4f = "Others";
                 }
+
+                //Sync P1a
+                if (s.P1a.Contains("a"))
+                {
+                    s.P1a1 = "Food";
+                }
+                if (s.P1a.Contains("b"))
+                {
+                    s.P1a2 = "Cash Assistance";
+                }
+                if (s.P1a.Contains("c"))
+                {
+                    s.P1a3 = "Shelter Assistance";
+                }
+                if (s.P1a.Contains("d"))
+                {
+                    s.P1a4 = "Non Food Items";
+                }
+                if (s.P1a.Contains("e"))
+                {
+                    s.P1a5 = "Other";
+                }
+
+                //Sync P1b
+                if (s.P1b.Contains("a"))
+                {
+                    s.P1b1 = "Civil Authorities";
+                }
+                if (s.P1b.Contains("b"))
+                {
+                    s.P1b2 = "Military";
+                }
+                if (s.P1b.Contains("c"))
+                {
+                    s.P1b3 = "NGOs";
+                }
+                if (s.P1b.Contains("d"))
+                {
+                    s.P1b4 = "UN";
+                }
+                if (s.P1b.Contains("e"))
+                {
+                    s.P1b5 = "Other";
+                }
+
+                //SyncP2a
+                if (s.P2a.Contains("a"))
+                {
+                    s.P2a1 = "Theft and Robbery";
+                }
+                if (s.P2a.Contains("b"))
+                {
+                    s.P2a2 = "Killing";
+                }
+                if (s.P2a.Contains("c"))
+                {
+                    s.P2a3 = "Injury/Physical Assault";
+                }
+                if (s.P2a.Contains("d"))
+                {
+                    s.P2a4 = "Threat/harassment by host communities";
+                }
+                if (s.P2a.Contains("e"))
+                {
+                    s.P2a5 = "Threat/harrassment by authorities";
+                }
+                if (s.P2a.Contains("f"))
+                {
+                    s.P2a6 = "Threat/harrassment by armed groups";
+                }
+                if (s.P2a.Contains("g"))
+                {
+                    s.P2a7 = "Violence against boys/girls";
+                }
+                if (s.P2a.Contains("h"))
+                {
+                    s.P2a8 = "Gender based violence";
+                }
+                if (s.P2a.Contains("i"))
+                {
+                    s.P2a9 = "Kidnapping and abductions";
+                }
+                if (s.P2a.Contains("j"))
+                {
+                    s.P2a10 = "Other";
+                }
+
+                //Sync P5
+                if (s.P5.Contains("a"))
+                {
+                    s.P5a = "Children";
+                }
+                if (s.P5.Contains("b"))
+                {
+                    s.P5b = "Women";
+                }
+                if (s.P5.Contains("c"))
+                {
+                    s.P5c = "Men";
+                }
+                if (s.P5.Contains("d"))
+                {
+                    s.P5d = "Elderly";
+                }
+                if (s.P5.Contains("e"))
+                {
+                    s.P5e = "Disabled";
+                }
+                if (s.P5.Contains("a"))
+                {
+                    s.P5f = "None";
+                }
+
+                //Sync P7
+                if (s.P7.Contains("a"))
+                {
+                    s.P7a = "Mobility aids";
+                }
+                if (s.P7.Contains("b"))
+                {
+                    s.P7b = "Hearing aids";
+                }
+                if (s.P7.Contains("c"))
+                {
+                    s.P7c = "Visual aids";
+                }
+                if (s.P7.Contains("d"))
+                {
+                    s.P7d = "Medical services";
+                }
+                if (s.P7.Contains("e"))
+                {
+                    s.P7e = "Others";
+                }
+                if (s.P7.Contains("f"))
+                {
+                    s.P7f = "None";
+                }
+                //Sync W1
+                if (s.W1.Contains("a"))
+                {
+                    s.W1a = "Surface Water";
+                }
+                if (s.W1.Contains("b"))
+                {
+                    s.W1b = "Protected well/spring";
+                }
+                if (s.W1.Contains("c"))
+                {
+                    s.W1c = "Unprotected well/spring";
+                }
+                if (s.W1.Contains("d"))
+                {
+                    s.W1d = "Unprotected handpumps";
+                }
+                if (s.W1.Contains("e"))
+                {
+                    s.W1e = "Protected handpumps";
+                }
+                if (s.W1.Contains("f"))
+                {
+                    s.W1f = "Piped water supply";
+                }
+                if (s.W1.Contains("g"))
+                {
+                    s.W1g = "Tanker";
+                }
+                if (s.W1.Contains("h"))
+                {
+                    s.W1h = "Other";
+                }
+                if (s.W1.Contains("i"))
+                {
+                    s.W1i = "Don’t know";
+                }
                 synced.Add(s);
             }
             return synced;

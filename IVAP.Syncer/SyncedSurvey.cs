@@ -170,11 +170,24 @@ namespace IVAP.Syncer
         [CsvField(Name = "IDP:IO:GI:P1a")]
         public string P1a { get; set; }
 
+        public string P1a1 { get; set; }
+        public string P1a2 { get; set; }
+        public string P1a3 { get; set; }
+        public string P1a4 { get; set; }
+        public string P1a5 { get; set; }
+
         [CsvField(Name = "IDP:IO:GI:P1aOther")]
         public string P1aOther { get; set; }
 
         [CsvField(Name = "IDP:IO:GI:P1b")]
         public string P1b { get; set; }
+
+        public string P1b1 { get; set; }
+        public string P1b2 { get; set; }
+        public string P1b3 { get; set; }
+        public string P1b4 { get; set; }
+        public string P1b5 { get; set; }
+
 
         [CsvField(Name = "IDP:IO:GI:P1bOther")]
         public string P1bOther { get; set; }
@@ -184,6 +197,17 @@ namespace IVAP.Syncer
 
         [CsvField(Name = "IDP:IO:GI:P2a")]
         public string P2a { get; set; }
+
+        public string P2a1 { get; set; }
+        public string P2a2 { get; set; }
+        public string P2a3 { get; set; }
+        public string P2a4 { get; set; }
+        public string P2a5 { get; set; }
+        public string P2a6 { get; set; }
+        public string P2a7 { get; set; }
+        public string P2a8 { get; set; }
+        public string P2a9 { get; set; }
+        public string P2a10 { get; set; }
 
         [CsvField(Name = "IDP:IO:GI:P2aOther")]
         public string P2aOther { get; set; }
@@ -203,6 +227,13 @@ namespace IVAP.Syncer
         [CsvField(Name = "IDP:IO:GI:P5")]
         public string P5 { get; set; }
 
+        public string P5a { get; set; }
+        public string P5b { get; set; }
+        public string P5c { get; set; }
+        public string P5d { get; set; }
+        public string P5e { get; set; }
+        public string P5f { get; set; }
+
         [CsvField(Name = "IDP:IO:GI:P6")]
         public string P6 { get; set; }
 
@@ -212,8 +243,29 @@ namespace IVAP.Syncer
         [CsvField(Name = "IDP:IO:GI:P7")]
         public string P7 { get; set; }
 
+        public string P7a { get; set; }
+        public string P7b { get; set; }
+        public string P7c { get; set; }
+        public string P7d { get; set; }
+        public string P7e { get; set; }
+        public string P7f { get; set; }
+
         [CsvField(Name = "IDP:IO:GI:P7Other")]
         public string P7Other { get; set; }
+
+        [CsvField(Name = "IDP:IO:GI:W1")]
+        public string W1 { get; set; }
+
+        public string W1a { get; set; }
+        public string W1b { get; set; }
+        public string W1c { get; set; }
+        public string W1d { get; set; }
+        public string W1e { get; set; }
+        public string W1f { get; set; }
+        public string W1g { get; set; }
+        public string W1h { get; set; }
+        public string W1i { get; set; }
+
 
         [CsvField(Name = "IDP:IO:GI:W1Other")]
         public string W1Other { get; set; }
