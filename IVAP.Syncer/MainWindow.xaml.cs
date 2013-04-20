@@ -57,7 +57,17 @@ namespace IVAP.Syncer
         private void syncButton_Click(object sender, RoutedEventArgs e)
         {
             var uCSV = new CsvReader(new StreamReader(fileTxtBox.Text));
-            //var unSyncedList = 
+
+            var unSyncedList = uCSV.GetRecords<Survey>();
+            Syncrhonizerer syncer = new Syncrhonizerer();
+            var syncedList = syncer.SyncSurveyWithMagicalUnicorns(unSyncedList.ToList());
+
+            //Lets write this file
+            using (var csv = new CsvWriter(new StreamWriter("C:\\Users\\ali\\Desktop\\SyncedSample.csv")))
+            {
+                csv.WriteRecords(syncedList);
+            }
+
         }
     }
 }

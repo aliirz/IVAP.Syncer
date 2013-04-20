@@ -9,13 +9,13 @@ namespace IVAP.Syncer
     public class SyncedSurvey
     {
         [CsvField(Name = "start")]
-        public DateTime start { get; set; }
+        public string start { get; set; }
 
         [CsvField(Name = "end")]
-        public DateTime end { get; set; }
+        public string end { get; set; }
 
         [CsvField(Name = "today")]
-        public DateTime today { get; set; }
+        public string today { get; set; }
 
         [CsvField(Name = "IO1")]
         public string IO1 { get; set; }
@@ -140,6 +140,14 @@ namespace IVAP.Syncer
 
         [CsvField(Name = "IDP:IO:GI:P4")]
         public string P4 { get; set; }
+
+        public string P4a { get; set; }
+        public string P4b { get; set; }
+        public string P4c { get; set; }
+        public string P4d { get; set; }
+        public string P4e { get; set; }
+        public string P4f { get; set; }
+
 
         [CsvField(Name = "IDP:IO:GI:P4Other")]
         public string P4Other { get; set; }

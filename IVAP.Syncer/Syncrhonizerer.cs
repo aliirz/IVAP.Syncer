@@ -7,7 +7,7 @@ namespace IVAP.Syncer
 {
     public class Syncrhonizerer
     {
-        public List<SyncedSurvey> syncedSurvey(List<Survey> unsyncedSurvey)
+        public List<SyncedSurvey> SyncSurveyWithMagicalUnicorns(List<Survey> unsyncedSurvey)
         {
             List<SyncedSurvey> synced = new List<SyncedSurvey>();
             foreach (Survey us in unsyncedSurvey)
@@ -119,220 +119,647 @@ namespace IVAP.Syncer
 
 
                     case "1":
-                        s.UC = "Hangu";
+                        s.UC = "Darband";
+                        break;
+
+                    case "2":
+                        s.UC = "Balyamina";
+                        break;
+                    case "3":
+                        s.UC = "Ganjiano Kali (MC)";
+                        break;
+                    case "4":
+                        s.UC = "Kahi";
+                        break;
+                    case "5":
+                        s.UC = "Kech Banda";
+                        break;
+                    case "6":
+                        s.UC = "Khan Bari";
+                        break;
+                    case "7":
+                        s.UC = "Kotki";
+                        break;
+                    case "8":
+                        s.UC = "Muhammad Khawja";
+                        break;
+                    case "9":
+                        s.UC = "Raisan";
+                        break;
+                    case "10":
+                        s.UC = "Toghserai";
+                        break;
+                    case "11":
+                        s.UC = "Dallan";
+                        break;
+                    case "12":
+                        s.UC = "Darsamand";
+                        break;
+                    case "13":
+                        s.UC = "Doaba (Tc)";
+                        break;
+                    case "14":
+                        s.UC = "Doaba (Uc)";
+                        break;
+                    case "15":
+                        s.UC = "Karbogha";
+                        break;
+                    case "16":
+                        s.UC = "Naryab-II";
+                        break;
+                    case "17":
+                        s.UC = "Naryabi-I";
+                        break;
+                    case "18":
+                        s.UC = "Thall (Rural)";
+                        break;
+                    case "19":
+                        s.UC = "Thall (Urban)";
+                        break;
+                    case "20":
+                        s.UC = "Tora Warai";
+                        break;
+                    case "21":
+                        s.UC = "Jarma";
+                        break;
+                    case "22":
+                        s.UC = "Lachi (Rural)";
+                        break;
+                    case "23":
+                        s.UC = "Lachi (Urban)";
+                        break;
+                    case "24":
+                        s.UC = "Mandoori";
+                        break;
+                    case "25":
+                        s.UC = "Shah Pur";
+                        break;
+                    case "26":
+                        s.UC = "Shakardara Rural-I";
+                        break;
+                    case "27":
+                        s.UC = "Shakardara Rural-II";
+                        break;
+                    case "28":
+                        s.UC = "Shakardara Urban";
+                        break;
+                    case "29":
+                        s.UC = "Sudal";
+                        break;
+                    case "30":
+                        s.UC = "Summari";
+                        break;
+                    case "31":
+                        s.UC = "Surgul";
+                        break;
+                    case "32":
+                        s.UC = "Ali Zai";
+                        break;
+                    case "33":
+                        s.UC = "Bahadar Kot";
+                        break;
+                    case "34":
+                        s.UC = "Bilitang";
+                        break;
+                    case "35":
+                        s.UC = "Chorlaki";
+                        break;
+                    case "36":
+                        s.UC = "Dhoda";
+                        break;
+                    case "37":
+                        s.UC = "Gumbat";
+                        break;
+                    case "38":
+                        s.UC = "Kharmatoo";
+                        break;
+                    case "39":
+                        s.UC = "Khushal Garh";
+                        break;
+                    case "40":
+                        s.UC = "Kohat Urban-I";
+                        break;
+                    case "41":
+                        s.UC = "Kohat Urban-II";
+                        break;
+                    case "42":
+                        s.UC = "Kohat Urban-III";
+                        break;
+                    case "43":
+                        s.UC = "Kohat Urban-IV";
+                        break;
+                    case "44":
+                        s.UC = "Kohat Urban-V";
+                        break;
+                    case "45":
+                        s.UC = "Kohat Urban-VI";
+                        break;
+                    case "46":
+                        s.UC = "Muhammadzai";
+                        break;
+                    case "47":
+                        s.UC = "Nusrat Khel";
+                        break;
+                    case "48":
+                        s.UC = "Sher Kot";
+                        break;
+                    case "49":
+                        s.UC = "Togh Bala-I";
+                        break;
+                    case "50":
+                        s.UC = "Togh Bala-II";
+                        break;
+                    case "51":
+                        s.UC = "Usterzai";
+                        break;
+                    case "52":
+                        s.UC = "Ziarat Sheikh Allabad";
+                        break;
+                    case "53":
+                        s.UC = "Khalsa-I";
+                        break;
+                    case "54":
+                        s.UC = "Khalsa-II";
+                        break;
+                    case "55":
+                        s.UC = "Lahori";
+                        break;
+                    case "56":
+                        s.UC = "Mahal Terai-I";
+                        break;
+                    case "57":
+                        s.UC = "Mahal Terai-II";
+                        break;
+                    case "58":
+                        s.UC = "Shaheen Muslim Town-I";
+                        break;
+                    case "59":
+                        s.UC = "Karimpura";
+                        break;
+                    case "60":
+                        s.UC = "Shaheen Muslim Town-II";
+                        break;
+                    case "61":
+                        s.UC = "Shahi Bagh";
+                        break;
+                    case "62":
+                        s.UC = "Sheikh Junaid Abad";
+                        break;
+                    case "63":
+                        s.UC = "Akhun Abad";
+                        break;
+                    case "64":
+                        s.UC = "Andher Shehar";
+                        break;
+                    case "65":
+                        s.UC = "Asia";
+                        break;
+                    case "66":
+                        s.UC = "Bana Mari";
+                        break;
+                    case "67":
+                        s.UC = "Faqir Abad";
+                        break;
+                    case "68":
+                        s.UC = "Gul Bahar";
+                        break;
+                    case "69":
+                        s.UC = "Gunj";
+                        break;
+                    case "70":
+                        s.UC = "Jehangira Pura";
+                        break;
+                    case "71":
+                        s.UC = "Kakshal-I";
+                        break;
+                    case "72":
+                        s.UC = "Kakshal-II";
+                        break;
+                    case "73":
+                        s.UC = "Sikandar Town";
+                        break;
+                    case "74":
+                        s.UC = "Wazir Bagh";
+                        break;
+                    case "75":
+                        s.UC = "Yakatoot-I";
+                        break;
+                    case "76":
+                        s.UC = "Yakatoot-II";
+                        break;
+                    case "77":
+                        s.UC = "Yakatoot-III";
+                        break;
+                    case "78":
+                        s.UC = "Shahi Bagh";
+                        break;
+                    case "79":
+                        s.UC = "Sheikh Junaid Abad";
+                        break;
+                    case "80":
+                        s.UC = "Sikandar Town";
+                        break;
+                    case "81":
+                        s.UC = "Wazir Bagh";
+                        break;
+                    case "82":
+                        s.UC = "Yakatoot-I";
+                        break;
+                    case "83":
+                        s.UC = "Yakatoot-II";
+                        break;
+                    case "84":
+                        s.UC = "Yakatoot-III";
+                        break;
+                    case "85":
+                        s.UC = "Bhudhni";
+                        break;
+                    case "86":
+                        s.UC = "Chaghar Matti";
+                        break;
+                    case "87":
+                        s.UC = "Chamkani";
+                        break;
+                    case "88":
+                        s.UC = "Dag";
+                        break;
+                    case "89":
+                        s.UC = "Ghari Sherdad";
+                        break;
+                    case "90":
+                        s.UC = "Gulbela";
+                        break;
+                    case "91":
+                        s.UC = "Hassan Ghari-I";
+                        break;
+                    case "92":
+                        s.UC = "Hassan Ghari-II";
+                        break;
+                    case "93":
+                        s.UC = "Hayana Payan";
+                        break;
+                    case "94":
+                        s.UC = "Jogani";
+                        break;
+                    case "95":
+                        s.UC = "Kafoor Dheri";
+                        break;
+                    case "96":
+                        s.UC = "Kaniza";
+                        break;
+                    case "97":
+                        s.UC = "Kankola";
+                        break;
+                    case "98":
+                        s.UC = "Khazana";
+                        break;
+                    case "99":
+                        s.UC = "Lala";
+                        break;
+                    case "100":
+                        s.UC = "Larama";
+                        break;
+                    case "101":
+                        s.UC = "Mathra";
+                        break;
+                    case "102":
+                        s.UC = "Nahqi";
+                        break;
+                    case "103":
+                        s.UC = "Pajjagi";
+                        break;
+                    case "104":
+                        s.UC = "Pakha Ghulam";
+                        break;
+                    case "105":
+                        s.UC = "Panam Dheri";
+                        break;
+                    case "106":
+                        s.UC = "Shahi Bala";
+                        break;
+                    case "107":
+                        s.UC = "Takhtabad";
+                        break;
+                    case "108":
+                        s.UC = "Wadpagga";
+                        break;
+                    case "109":
+                        s.UC = "Achini Bala";
+                        break;
+                    case "110":
+                        s.UC = "Bazid Khel";
+                        break;
+                    case "111":
+                        s.UC = "Deh Bahadar";
+                        break;
+                    case "112":
+                        s.UC = "Dheri Baghbanan";
+                        break;
+                    case "113":
+                        s.UC = "Hayatabad-I";
+                        break;
+                    case "114":
+                        s.UC = "Hayatabad-II";
+                        break;
+                    case "115":
+                        s.UC = "Landi Arbab";
+                        break;
+                    case "116":
+                        s.UC = "Malkandheri";
+                        break;
+                    case "117":
+                        s.UC = "Nothia";
+                        break;
+                    case "118":
+                        s.UC = "Nothia Jadeed";
+                        break;
+                    case "119":
+                        s.UC = "Palosi";
+                        break;
+                    case "120":
+                        s.UC = "Pawaka";
+                        break;
+                    case "121":
+                        s.UC = "Pishtakhara Payan";
+                        break;
+                    case "122":
+                        s.UC = "Regi";
+                        break;
+                    case "123":
+                        s.UC = "Sarband";
+                        break;
+                    case "124":
+                        s.UC = "Shaheen Town";
+                        break;
+                    case "125":
+                        s.UC = "Sufaid Dheri";
+                        break;
+                    case "126":
+                        s.UC = "Tehkal Bala";
+                        break;
+                    case "127":
+                        s.UC = "Tehkal Payan-I";
+                        break;
+                    case "128":
+                        s.UC = "Tehkal Payan-II";
+                        break;
+                    case "129":
+                        s.UC = "University Town";
+                        break;
+                    case "130":
+                        s.UC = "Adezai";
+                        break;
+                    case "131":
+                        s.UC = "Aza Khel";
+                        break;
+                    case "132":
+                        s.UC = "Badabare Harizai";
+                        break;
+                    case "133":
+                        s.UC = "Badabare Maryamzai";
+                        break;
+                    case "134":
+                        s.UC = "Hazar Khwani-I";
+                        break;
+                    case "135":
+                        s.UC = "Hazar Khwani-II";
+                        break;
+                    case "136":
+                        s.UC = "Maira Kachori";
+                        break;
+                    case "137":
+                        s.UC = "Maira Surizai Payan";
+                        break;
+                    case "138":
+                        s.UC = "Maryamzai";
+                        break;
+                    case "139":
+                        s.UC = "Mashoogagar";
+                        break;
+                    case "140":
+                        s.UC = "Mathani";
+                        break;
+                    case "141":
+                        s.UC = "Musazai";
+                        break;
+                    case "142":
+                        s.UC = "Sheikh Muhammadii";
+                        break;
+                    case "143":
+                        s.UC = "Sheikhan";
+                        break;
+                    case "144":
+                        s.UC = "Shirkira";
+                        break;
+                    case "145":
+                        s.UC = "Suleman Khel";
+                        break;
+                    case "146":
+                        s.UC = "Surizai Bala";
+                        break;
+                    case "147":
+                        s.UC = "Surizai Payan";
+                        break;
+                    case "148":
+                        s.UC = "Urmar Bala";
+                        break;
+                    case "149":
+                        s.UC = "Urmar Miana";
+                        break;
+                    case "150":
+                        s.UC = "Urmar Payan";
+                        break;
+                    case "151":
+                        s.UC = "Adamzai";
+                        break;
+                    case "152":
+                        s.UC = "Akora Khattak M.c";
+                        break;
+                    case "153":
+                        s.UC = "Azakhel Bala";
+                        break;
+                    case "154":
+                        s.UC = "Badrashi";
+                        break;
+                    case "155":
+                        s.UC = "Dheri Katti Khel";
+                        break;
+                    case "156":
+                        s.UC = "Gandiri";
+                        break;
+                    case "157":
+                        s.UC = "Inzari";
+                        break;
+                    case "158":
+                        s.UC = "Kahi";
+                        break;
+                    case "159":
+                        s.UC = "Khairabad";
+                        break;
+                    case "160":
+                        s.UC = "Khaishki Bala";
+                        break;
+                    case "161":
+                        s.UC = "Khaishki Payan";
+                        break;
+                    case "162":
+                        s.UC = "Pabbi";
+                        break;
+                    case "163":
+                        s.UC = "Jehangira-I";
+                        break;
+                    case "164":
+                        s.UC = "Mandori";
+                        break;
+                    case "165":
+                        s.UC = "Manki Sharif";
+                        break;
+                    case "166":
+                        s.UC = "Maira Akora Khattak";
+                        break;
+                    case "167":
+                        s.UC = "Misri Banda";
+                        break;
+                    case "168":
+                        s.UC = "Mohib Banda";
+                        break;
+                    case "169":
+                        s.UC = "Mughalki";
+                        break;
+                    case "170":
+                        s.UC = "Nizampur";
+                        break;
+                    case "171":
+                        s.UC = "Nowshera City";
+                        break;
+                    case "172":
+                        s.UC = "Nowshera Kalan";
+                        break;
+                    case "173":
+                        s.UC = "Nowshera Cantt";
+                        break;
+                    case "174":
+                        s.UC = "Pahari Kati Khel";
+                        break;
+                    case "175":
+                        s.UC = "Pir Piai";
+                        break;
+                    case "176":
+                        s.UC = "Pir Sabak";
+                        break;
+                    case "177":
+                        s.UC = "Rashakai";
+                        break;
+                    case "178":
+                        s.UC = "Risalpur";
+                        break;
+                    case "179":
+                        s.UC = "Saleh Khana";
+                        break;
+                    case "180":
+                        s.UC = "Shaidu";
+                        break;
+                    case "181":
+                        s.UC = "Aman Garh";
+                        break;
+                    case "182":
+                        s.UC = "Tarkha";
+                        break;
+                    case "183":
+                        s.UC = "Jalozai";
+                        break;
+                    case "184":
+                        s.UC = "Ziarat Kaka Sahib";
+                        break;
+                    case "185":
+                        s.UC = "Chowkai Town";
+                        break;
+                    case "186":
+                        s.UC = "Azakhel Payan";
+                        break;
+                    case "187":
+                        s.UC = "Bara Banda";
+                        break;
+                    case "188":
+                        s.UC = "Kabul River";
+                        break;
+                    case "189":
+                        s.UC = "Nawan Killi";
+                        break;
+                    case "190":
+                        s.UC = "Zara Miana";
+                        break;
+                    case "191":
+                        s.UC = "Akbar Pura";
+                        break;
+                    case "192":
+                        s.UC = "Aman Kot";
+                        break;
+                    case "193":
+                        s.UC = "Chowkai Mamraiz";
+                        break;
+                    case "194":
+                        s.UC = "Dag Behsud";
+                        break;
+                    case "195":
+                        s.UC = "Dag Ismail Khel";
+                        break;
+                    case "196":
+                        s.UC = "Shah Kot";
+                        break;
+                    case "197":
+                        s.UC = "Taru Jabba";
+                        break;
+                    case "198":
+                        s.UC = "Daggai";
+                        break;
+                    case "199":
+                        s.UC = "Dag Ismail Khel Chapri";
+                        break;
+                    default:
+                        s.UC = "null";
                         break;
                 }
-                //2	Thall
-                //3	Lachi
-                //4	Kohat
-                //5	Peshawar (Town-I)
-                //6	Peshawar (Town-II)
-                //7	Peshawar (Town-III)
-                //8	Peshawar (Town-IV)
-                //9	Nowshera
-                //10	Pabbi
-                //1	Darband
-                //2	Balyamina
-                //3	Ganjiano Kali (MC)
-                //4	Kahi
-                //5	Kech Banda
-                //6	Khan Bari
-                //7	Kotki
-                //8	Muhammad Khawja
-                //9	Raisan
-                //10	Toghserai
-                //11	Dallan
-                //12	Darsamand
-                //13	Doaba (Tc)
-                //14	Doaba (Uc)
-                //15	Karbogha
-                //16	Naryab-II
-                //17	Naryabi-I
-                //18	Thall (Rural)
-                //19	Thall (Urban)
-                //20	Tora Warai
-                //21	Jarma
-                //22	Lachi (Rural)
-                //23	Lachi (Urban)
-                //24	Mandoori
-                //25	Shah Pur
-                //26	Shakardara Rural-I
-                //27	Shakardara Rural-II
-                //28	Shakardara Urban
-                //29	Sudal
-                //30	Summari
-                //31	Surgul
-                //32	Ali Zai
-                //33	Bahadar Kot
-                //34	Bilitang
-                //35	Chorlaki
-                //36	Dhoda
-                //37	Gumbat
-                //38	Kharmatoo
-                //39	Khushal Garh
-                //40	Kohat Urban-I
-                //41	Kohat Urban-II
-                //42	Kohat Urban-III
-                //43	Kohat Urban-IV
-                //44	Kohat Urban-V
-                //45	Kohat Urban-VI
-                //46	Muhammadzai
-                //47	Nusrat Khel
-                //48	Sher Kot
-                //49	Togh Bala-I
-                //50	Togh Bala-II
-                //51	Usterzai
-                //52	Ziarat Sheikh Allabad
-                //53	Khalsa-I
-                //54	Khalsa-II
-                //55	Lahori
-                //56	Mahal Terai-I
-                //57	Mahal Terai-II
-                //58	Shaheen Muslim Town-I
-                //59	Karimpura
-                //60	Shaheen Muslim Town-II
-                //61	Shahi Bagh
-                //62	Sheikh Junaid Abad
-                //63	Akhun Abad
-                //64	Andher Shehar
-                //65	Asia
-                //66	Bana Mari
-                //67	Faqir Abad
-                //68	Gul Bahar
-                //69	Gunj
-                //70	Jehangira Pura
-                //71	Kakshal-I
-                //72	Kakshal-II
-                //73	Sikandar Town
-                //74	Wazir Bagh
-                //75	Yakatoot-I
-                //76	Yakatoot-II
-                //77	Yakatoot-III
-                //78	Shahi Bagh
-                //79	Sheikh Junaid Abad
-                //80	Sikandar Town
-                //81	Wazir Bagh
-                //82	Yakatoot-I
-                //83	Yakatoot-II
-                //84	Yakatoot-III
-                //85	Bhudhni
-                //86	Chaghar Matti
-                //87	Chamkani
-                //88	Dag
-                //89	Ghari Sherdad
-                //90	Gulbela
-                //91	Hassan Ghari-I
-                //92	Hassan Ghari-II
-                //93	Hayana Payan
-                //94	Jogani
-                //95	Kafoor Dheri
-                //96	Kaniza
-                //97	Kankola
-                //98	Khazana
-                //99	Lala
-                //100	Larama
-                //101	Mathra
-                //102	Nahqi
-                //103	Pajjagi
-                //104	Pakha Ghulam
-                //105	Panam Dheri
-                //106	Shahi Bala
-                //107	Takhtabad
-                //108	Wadpagga
-                //109	Achini Bala
-                //110	Bazid Khel
-                //111	Deh Bahadar
-                //112	Dheri Baghbanan
-                //113	Hayatabad-I
-                //114	Hayatabad-II
-                //115	Landi Arbab
-                //116	Malkandheri
-                //117	Nothia
-                //118	Nothia Jadeed
-                //119	Palosi
-                //120	Pawaka
-                //121	Pishtakhara Payan
-                //122	Regi
-                //123	Sarband
-                //124	Shaheen Town
-                //125	Sufaid Dheri
-                //126	Tehkal Bala
-                //127	Tehkal Payan-I
-                //128	Tehkal Payan-II
-                //129	University Town
-                //130	Adezai
-                //131	Aza Khel
-                //132	Badabare Harizai
-                //133	Badabare Maryamzai
-                //134	Hazar Khwani-I
-                //135	Hazar Khwani-II
-                //136	Maira Kachori
-                //137	Maira Surizai Payan
-                //138	Maryamzai
-                //139	Mashoogagar
-                //140	Mathani
-                //141	Musazai
-                //142	Sheikh Muhammadii
-                //143	Sheikhan
-                //144	Shirkira
-                //145	Suleman Khel
-                //146	Surizai Bala
-                //147	Surizai Payan
-                //148	Urmar Bala
-                //149	Urmar Miana
-                //150	Urmar Payan
-                //151	Adamzai
-                //152	Akora Khattak M.c
-                //153	Azakhel Bala
-                //154	Badrashi
-                //155	Dheri Katti Khel
-                //156	Gandiri
-                //157	Inzari
-                //158	Kahi
-                //159	Khairabad
-                //160	Khaishki Bala
-                //161	Khaishki Payan
-                //162	Pabbi
-                //163	Jehangira-I
-                //164	Mandori
-                //165	Manki Sharif
-                //166	Maira Akora Khattak
-                //167	Misri Banda
-                //168	Mohib Banda
-                //169	Mughalki
-                //170	Nizampur
-                //171	Nowshera City
-                //172	Nowshera Kalan
-                //173	Nowshera Cantt
-                //174	Pahari Kati Khel
-                //175	Pir Piai
-                //176	Pir Sabak
-                //177	Rashakai
-                //178	Risalpur
-                //179	Saleh Khana
-                //180	Shaidu
-                //181	Aman Garh
-                //182	Tarkha
-                //183	Jalozai
-                //184	Ziarat Kaka Sahib
-                //185	Chowkai Town
-                //186	Azakhel Payan
-                //187	Bara Banda
-                //188	Kabul River
-                //189	Nawan Killi
-                //190	Zara Miana
-                //191	Akbar Pura
-                //192	Aman Kot
-                //193	Chowkai Mamraiz
-                //194	Dag Behsud
-                //195	Dag Ismail Khel
-                //196	Shah Kot
-                //197	Taru Jabba
-                //198	Daggai
-                //199	Dag Ismail Khel Chapri
+                switch (s.DS1)
+                {
+                    case "a":
+                        s.DS1 = "Stay here in this UC";
+                        break;
+                    case "b":
+                        s.DS1 = "Move to another UC";
+                        break;
+                    default:
+                        s.DS1 = "null";
+                        break;
+                }
 
+                //sync logic for P4
+                if (s.P4.Contains("a"))
+                {
+                    s.P4a = "Feeling of being safe";
+                }
+                if (s.P4.Contains("b"))
+                {
+                    s.P4b = "Affordable rent";
+                }
+                if (s.P4.Contains("c"))
+                {
+                    s.P4c = "Availability of jobs";
+                }
+                if (s.P4.Contains("d"))
+                {
+                    s.P4d = "Access to assistance";
+                }
+                if (s.P4.Contains("e"))
+                {
+                    s.P4e = "Access to basic services";
+                }
+                if (s.P4.Contains("f"))
+                {
+                    s.P4f = "Others";
+                }
+                synced.Add(s);
             }
-
             return synced;
         }
     }
