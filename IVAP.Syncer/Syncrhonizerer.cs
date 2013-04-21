@@ -933,6 +933,195 @@ namespace IVAP.Syncer
                 {
                     s.W1i = "Don’t know";
                 }
+
+                //Sync W2
+                if (s.W2.Contains("a"))
+                {
+                    s.W2a = "Chlorination";
+                }
+                if (s.W2.Contains("b"))
+                {
+                    s.W2b = "Boiling";
+                }
+                if (s.W2.Contains("c"))
+                {
+                    s.W2c = "Filter and Stand";
+                }
+                if (s.W2.Contains("d"))
+                {
+                    s.W2d = "Solar";
+                }
+                if (s.W2.Contains("e"))
+                {
+                    s.W2e = "Other";
+                }
+                if (s.W2.Contains("f"))
+                {
+                    s.W2f = "None";
+                }
+
+                //Sync W3
+                if (s.W3.Contains("a"))
+                {
+                    s.W3a = "Open vessel";
+                }
+                if (s.W3.Contains("b"))
+                {
+                    s.W3b = "closed vessel";
+                }
+                if (s.W3.Contains("c"))
+                {
+                    s.W3c = "Jerry can";
+                }
+                if (s.W3.Contains("d"))
+                {
+                    s.W3d = "Ceramic pot";
+                }
+                if (s.W3.Contains("e"))
+                {
+                    s.W3e = "Dirty vessel";
+                }
+
+
+                //Sync L5
+                if (s.L5.Contains("a"))
+                {
+                    s.L5a = "Feeds";
+                }
+                if (s.L5.Contains("b"))
+                {
+                    s.L5b = "Medication";
+                }
+                if (s.L5.Contains("c"))
+                {
+                    s.L5c = "Shelter";
+                }
+                if (s.L5.Contains("d"))
+                {
+                    s.L5a = "Milking kits";
+                }
+                if (s.L5.Contains("e"))
+                {
+                    s.L5a = "None";
+                }
+
+
+                //Sync L6
+                if (s.L6.Contains("a"))
+                {
+
+                }
+                if (s.L6.Contains("a"))
+                {
+
+                }
+                if (s.L6.Contains("a"))
+                {
+                    s.L6a = "Borrow food, or rely on help from friends";
+                }
+                if (s.L6.Contains("b"))
+                {
+                    s.L6b = "Eat less preferred or cheaper food";
+                }
+                if (s.L6.Contains("c"))
+                {
+                    s.L6c = "Purchase food on debts";
+                }
+                if (s.L6.Contains("d"))
+                {
+                    s.L6d = "Limit portion size at meals";
+                }
+                if (s.L6.Contains("e"))
+                {
+                    s.L6e = "Selling  household items/ jewelleries";
+                }
+                if (s.L6.Contains("f"))
+                {
+                    s.L6f = "Decrease expenses on health care";
+                }
+                if (s.L6.Contains("g"))
+                {
+                    s.L6g = "Skipped entire day's meal";
+                }
+                if (s.L6.Contains("h"))
+                {
+                    s.L6h = "Women ate less food than men";
+                }
+                if (s.L6.Contains("i"))
+                {
+                    s.L6i = "Adults eat less in order to provide food for children";
+                }
+                if (s.L6.Contains("j"))
+                {
+                    s.L6j = "Send children to work";
+                }
+                if (s.L6.Contains("k"))
+                {
+                    s.L6k = "Sent family members to work abroad";
+                }
+                if (s.L6.Contains("l"))
+                {
+                    s.L6l = "Selling livestock";
+                }
+                if (s.L6.Contains("m"))
+                {
+                    s.L6m = "Other";
+                }
+                if (s.L6.Contains("n"))
+                {
+                    s.L6n = "None of these";
+                }
+
+
+                //Sync E3
+                if (s.E3.Contains("a"))
+                {
+                    s.E3a = "Unavailability of schools";
+                }
+                if (s.E3.Contains("b"))
+                {
+                    s.E3b = "Not able to sit in exams";
+                }
+                if (s.E3.Contains("c"))
+                {
+                    s.E3c = "Lack of documentation";
+                }
+                if (s.E3.Contains("d"))
+                {
+                    s.E3d = "Lack of uniform/books";
+                }
+                if (s.E3.Contains("e"))
+                {
+                    s.E3e = "Lack of fees";
+                }
+                if (s.E3.Contains("f"))
+                {
+                    s.E3f = "Cultural constraints";
+                }
+                if (s.E3.Contains("g"))
+                {
+                    s.E3g = "Other";
+                }
+
+                //Sync N1
+                switch (s.N1)
+                {
+                    case "a":
+                        s.N1 = "More women breast-feeding";
+                        break;
+                    case "b":
+                        s.N1 = "Less women breast feeding";
+                        break;
+                    case "c":
+                        s.N1 = "No change, the same number are breast-feeding";
+                        break;
+                    case "d":
+                        s.N1 = "Dont know";
+                        break;
+
+
+
+                }
                 synced.Add(s);
             }
             return synced;
