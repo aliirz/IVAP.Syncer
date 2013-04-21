@@ -51,7 +51,7 @@ namespace IVAP.Syncer
                         s.TehsilF = "Landi Kotal";
                         break;
                     default:
-                        s.TehsilF = "null";
+                        s.TehsilF = "";
                         break;
                 }
 
@@ -71,7 +71,7 @@ namespace IVAP.Syncer
                         s.District = "Peshawar";
                         break;
                     default:
-                        s.District = "null";
+                        s.District = "";
                         break;
                 }
 
@@ -109,7 +109,7 @@ namespace IVAP.Syncer
                         s.Tehsil = "Pabbi";
                         break;
                     default:
-                        s.Tehsil = "null";
+                        s.Tehsil = "";
                         break;
                 }
 
@@ -717,7 +717,7 @@ namespace IVAP.Syncer
                         s.UC = "Dag Ismail Khel Chapri";
                         break;
                     default:
-                        s.UC = "null";
+                        s.UC = "";
                         break;
                 }
                 switch (s.DS1)
@@ -729,7 +729,7 @@ namespace IVAP.Syncer
                         s.DS1 = "Move to another UC";
                         break;
                     default:
-                        s.DS1 = "null";
+                        s.DS1 = "";
                         break;
                 }
 
@@ -1119,8 +1119,223 @@ namespace IVAP.Syncer
                         s.N1 = "Dont know";
                         break;
 
+                    default:
+                        s.N1 = "";
+                        break;
 
+                }
+                //Sync N2
+                if (s.N2.Contains("a"))
+                {
+                    s.N2a = "Lack of privacy / space";
+                }
+                if (s.N2.Contains("b"))
+                {
+                    s.N2b = "No/Less Breast milk (perhaps due to stress or poor health)";
+                }
+                if (s.N2.Contains("c"))
+                {
+                    s.N2c = "Other";
+                }
 
+                //Sync N3
+                if (s.N3.Contains("a"))
+                {
+                    s.N3a = "Breast-feeding stopped";
+                }
+                if (s.N3.Contains("b"))
+                {
+                    s.N3b = "Breast-feeding reduced";
+                }
+                if (s.N3.Contains("c"))
+                {
+                    s.N3c = "Complementary feeding quantity increased";
+                }
+                if (s.N3.Contains("d"))
+                {
+                    s.N3d = "Complementary feeding quantity decreased";
+                }
+                if (s.N3.Contains("e"))
+                {
+                    s.N3e = "Other";
+                }
+                if (s.N3.Contains("f"))
+                {
+                    s.N3f = "No change";
+                }
+
+                //Sync N5 
+                if (s.N5.Contains("a"))
+                {
+                    s.N5a = "Diarrhea";
+                }
+                if (s.N5.Contains("b"))
+                {
+                    s.N5b = "Cough/cold";
+                }
+                if (s.N5.Contains("c"))
+                {
+                    s.N5c = "Gastro/Diarrhea";
+                }
+                if (s.N5.Contains("d"))
+                {
+                    s.N5d = "Mental/trauma";
+                }
+                if (s.N5.Contains("e"))
+                {
+                    s.N5e = "Injury";
+                }
+                if (s.N5.Contains("f"))
+                {
+                    s.N5f = "Skin/infections";
+                }
+                if (s.N5.Contains("g"))
+                {
+                    s.N5g = "Fever";
+                }
+                if (s.N5.Contains("h"))
+                {
+                    s.N5h = "Pregnancy/problems";
+                }
+                if (s.N5.Contains("i"))
+                {
+                    s.N5i = "Measles";
+                }
+                if (s.N5.Contains("j"))
+                {
+                    s.N5j = "Other";
+                }
+                if (s.N5.Contains("k"))
+                {
+                    s.N5k = "None";
+                }
+
+                //Sync N6a
+                if (s.N6a.Contains("a"))
+                {
+                    s.N6a1 = "Basic Health Unit";
+                }
+                if (s.N6a.Contains("b"))
+                {
+                    s.N6a2 = "Rural Health Centre";
+                }
+                if (s.N6a.Contains("c"))
+                {
+                    s.N6a3 = "Private Health Care Provider";
+                }
+                if (s.N6a.Contains("d"))
+                {
+                    s.N6a4 = "Traditional Healer";
+                }
+                if (s.N6a.Contains("e"))
+                {
+                    s.N6a5 = "Someone in family";
+                }
+                if (s.N6a.Contains("f"))
+                {
+                    s.N6a6 = "No where";
+                }
+                if (s.N6a.Contains("g"))
+                {
+                    s.N6a7 = "Dont know";
+                }
+
+                //Sync N6b
+                if (s.N6b.Contains("a"))
+                {
+                    s.N6b1 = "Distance";
+                }
+                if (s.N6b.Contains("b"))
+                {
+                    s.N6b2 = "Cost";
+                }
+                if (s.N6b.Contains("c"))
+                {
+                    s.N6b3 = " Lack of transport";
+                }
+                if (s.N6b.Contains("d"))
+                {
+                    s.N6b4 = "Lack of medicine";
+                }
+                if (s.N6b.Contains("e"))
+                {
+                    s.N6b5 = " Lack of access of elderly/ disabled";
+                }
+                if (s.N6b.Contains("f"))
+                {
+                    s.N6b6 = "Cultural restrictions";
+                }
+                if (s.N6b.Contains("g"))
+                {
+                    s.N6b7 = "Security";
+                }
+                if (s.N6b.Contains("h"))
+                {
+                    s.N6b8 = "Other";
+                }
+
+                //Sync N7
+                if (s.N7.Contains("a"))
+                {
+                    s.N7a = "Free medicines";
+                }
+                if (s.N7.Contains("b"))
+                {
+                    s.N7b = "Antenatal services";
+                }
+                if (s.N7.Contains("c"))
+                {
+                    s.N7c = "Delivery services";
+                }
+                if (s.N7.Contains("d"))
+                {
+                    s.N7d = "Family planning services";
+                }
+                if (s.N7.Contains("e"))
+                {
+                    s.N7e = "Ambulance services";
+                }
+                if (s.N7.Contains("f"))
+                {
+                    s.N7f = "Vaccination services";
+                }
+                if (s.N7.Contains("g"))
+                {
+                    s.N7g = "Basic Laboratory services";
+                }
+                if (s.N7.Contains("h"))
+                {
+                    s.N7h = "Mental health/psycho-social support";
+                }
+                if (s.N7.Contains("i"))
+                {
+                    s.N7i = "Dont know";
+                }
+                if (s.N7.Contains("j"))
+                {
+                    s.N7j = "Other";
+                }
+                if (s.N7.Contains("k"))
+                {
+                    s.N7k = "None";
+                }
+
+                //Sync S3
+                if (s.S3.Contains("a"))
+                {
+                    s.S3a = "Open Air";
+                }
+                if (s.S3.Contains("b"))
+                {
+                    s.S3b = "Shared room with other families";
+                }
+                if (s.S3.Contains("c"))
+                {
+                    s.S3c = "Own Room";
+                }
+                if (s.S3.Contains("d"))
+                {
+                    s.S3d = "More than one room";
                 }
                 synced.Add(s);
             }

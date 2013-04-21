@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -49,8 +50,6 @@ namespace IVAP.Syncer
                 // Open document 
                 string filename = dlg.FileName;
                 fileTxtBox.Text = filename;
-                
-               
             }
         }
 
@@ -60,14 +59,17 @@ namespace IVAP.Syncer
 
             var unSyncedList = uCSV.GetRecords<Survey>();
             Syncrhonizerer syncer = new Syncrhonizerer();
+            Syncing newSyncWindow = new Syncing();
+            
+            newSyncWindow.Show();
             var syncedList = syncer.SyncSurveyWithMagicalUnicorns(unSyncedList.ToList());
-
+            //Loader.IsActive = true;
             //Lets write this file
             using (var csv = new CsvWriter(new StreamWriter("C:\\Users\\ali\\Desktop\\SyncedSample.csv")))
             {
                 csv.WriteRecords(syncedList);
             }
-
+            newSyncWindow.Close();
         }
     }
 }

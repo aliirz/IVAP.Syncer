@@ -72,6 +72,9 @@
     </ApplicationDefinition>
     <Compile Include="Survey.cs" />
     <Compile Include="SyncedSurvey.cs" />
+    <Compile Include="Syncing.xaml.cs">
+      <DependentUpon>Syncing.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Syncrhonizerer.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -88,6 +91,10 @@
     <Page Include="Resources\Icons.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Syncing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

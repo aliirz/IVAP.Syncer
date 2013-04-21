@@ -498,17 +498,41 @@ namespace IVAP.Syncer
         [CsvField(Name = "IDP:IO:GI:N2")]
         public string N2 { get; set; }
 
+        public string N2a { get; set; }
+        public string N2b { get; set; }
+        public string N2c { get; set; }
+
+
         [CsvField(Name = "IDP:IO:GI:N2Other")]
         public string N2Other { get; set; }
 
         [CsvField(Name = "IDP:IO:GI:N3")]
         public string N3 { get; set; }
 
+        public string N3a { get; set; }
+        public string N3b { get; set; }
+        public string N3c { get; set; }
+        public string N3d { get; set; }
+        public string N3e { get; set; }
+        public string N3f { get; set; }
+
         [CsvField(Name = "IDP:IO:GI:N3Other")]
         public string N4 { get; set; }
 
         [CsvField(Name = "IDP:IO:GI:N5")]
         public string N5 { get; set; }
+
+        public string N5a { get; set; }
+        public string N5b { get; set; }
+        public string N5c { get; set; }
+        public string N5d { get; set; }
+        public string N5e { get; set; }
+        public string N5f { get; set; }
+        public string N5g { get; set; }
+        public string N5h { get; set; }
+        public string N5i { get; set; }
+        public string N5j { get; set; }
+        public string N5k { get; set; }
 
         [CsvField(Name = "IDP:IO:GI:N5Other")]
         public string N5Other { get; set; }
@@ -519,14 +543,44 @@ namespace IVAP.Syncer
         [CsvField(Name = "IDP:IO:GI:N6a")]
         public string N6a { get; set; }
 
+        public string N6a1 { get; set; }
+        public string N6a2 { get; set; }
+        public string N6a3 { get; set; }
+        public string N6a4 { get; set; }
+        public string N6a5 { get; set; }
+        public string N6a6 { get; set; }
+        public string N6a7 { get; set; }
+
+
         [CsvField(Name = "IDP:IO:GI:N6b")]
         public string N6b { get; set; }
+
+        public string N6b1 { get; set; }
+        public string N6b2 { get; set; }
+        public string N6b3 { get; set; }
+        public string N6b4 { get; set; }
+        public string N6b5 { get; set; }
+        public string N6b6 { get; set; }
+        public string N6b7 { get; set; }
+        public string N6b8 { get; set; }
 
         [CsvField(Name = "IDP:IO:GI:N6bother")]
         public string N6bother { get; set; }
 
         [CsvField(Name = "IDP:IO:GI:N7")]
         public string N7 { get; set; }
+
+        public string N7a { get; set; }
+        public string N7b { get; set; }
+        public string N7c { get; set; }
+        public string N7d { get; set; }
+        public string N7e { get; set; }
+        public string N7f { get; set; }
+        public string N7g { get; set; }
+        public string N7h { get; set; }
+        public string N7i { get; set; }
+        public string N7j { get; set; }
+        public string N7k { get; set; }
 
         [CsvField(Name = "IDP:IO:GI:N7Other")]
         public string N7Other { get; set; }
@@ -554,6 +608,11 @@ namespace IVAP.Syncer
 
         [CsvField(Name = "IDP:IO:GI:S3")]
         public string S3 { get; set; }
+
+        public string S3a { get; set; }
+        public string S3b { get; set; }
+        public string S3c { get; set; }
+        public string S3d { get; set; }
 
         [CsvField(Name = "IDP:IO:GI:S4")]
         public string S4 { get; set; }
