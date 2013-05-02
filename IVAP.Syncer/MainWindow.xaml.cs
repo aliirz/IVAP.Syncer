@@ -55,20 +55,39 @@ namespace IVAP.Syncer
 
         private void syncButton_Click(object sender, RoutedEventArgs e)
         {
-            var uCSV = new CsvReader(new StreamReader(fileTxtBox.Text));
-
-            var unSyncedList = uCSV.GetRecords<Survey>();
-            Syncrhonizerer syncer = new Syncrhonizerer();
-            Syncing newSyncWindow = new Syncing();
-            
-            newSyncWindow.Show();
-            var syncedList = syncer.SyncSurveyWithMagicalUnicorns(unSyncedList.ToList());
-            //Loader.IsActive = true;
-            //Lets write this file
-            using (var csv = new CsvWriter(new StreamWriter("C:\\Users\\ali\\Desktop\\SyncedSample.csv")))
+            try
             {
-                csv.WriteRecords(syncedList);
+                var uCSV = new CsvReader(new StreamReader(fileTxtBox.Text));
+
+                var unSyncedList = uCSV.GetRecords<Survey>();
+                Syncrhonizerer syncer = new Syncrhonizerer();
+                //Thread t = new Thread(new ThreadStart(OpenLoader));
+                //t.Start();
+
+
+                //newSyncWindow.Show();
+                var syncedList = syncer.SyncSurveyWithMagicalUnicorns(unSyncedList.ToList());
+                //Loader.IsActive = true;
+                //Lets write this file
+                //using (var csv = new CsvWriter(new StreamWriter("C:\\Documents and Settings\\user\\Desktop\\SyncedSample.csv")))
+                using (var csv = new CsvWriter(new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\SyncedOrakzai.csv")))
+                {
+                    csv.WriteRecords(syncedList);
+                }
+                countLabel.Content = syncedList.Count.ToString() + " records synced";
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            //newSyncWindow.Close();
+        }
+
+
+        private void OpenLoader()
+        {
+            Syncing newSyncWindow = new Syncing();
+            System.Threading.Thread.Sleep(10);
             newSyncWindow.Close();
         }
     }

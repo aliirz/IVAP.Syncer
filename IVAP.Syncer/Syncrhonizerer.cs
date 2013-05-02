@@ -7,6 +7,11 @@ namespace IVAP.Syncer
 {
     public class Syncrhonizerer
     {
+        /// <summary>
+        /// Syncs the Survey file.
+        /// </summary>
+        /// <param name="unsyncedSurvey"></param>
+        /// <returns></returns>
         public List<SyncedSurvey> SyncSurveyWithMagicalUnicorns(List<Survey> unsyncedSurvey)
         {
             List<SyncedSurvey> synced = new List<SyncedSurvey>();
@@ -866,7 +871,7 @@ namespace IVAP.Syncer
                 {
                     s.P5e = "Disabled";
                 }
-                if (s.P5.Contains("a"))
+                if (s.P5.Contains("f")) //was  a
                 {
                     s.P5f = "None";
                 }
@@ -931,7 +936,7 @@ namespace IVAP.Syncer
                 }
                 if (s.W1.Contains("i"))
                 {
-                    s.W1i = "Don’t know";
+                    s.W1i = "Dont know";        //Dont know without comma
                 }
 
                 //Sync W2
@@ -998,23 +1003,15 @@ namespace IVAP.Syncer
                 }
                 if (s.L5.Contains("d"))
                 {
-                    s.L5a = "Milking kits";
+                    s.L5d = "Milking kits"; //fixed
                 }
                 if (s.L5.Contains("e"))
                 {
-                    s.L5a = "None";
+                    s.L5e = "None";     //fixed
                 }
 
 
                 //Sync L6
-                if (s.L6.Contains("a"))
-                {
-
-                }
-                if (s.L6.Contains("a"))
-                {
-
-                }
                 if (s.L6.Contains("a"))
                 {
                     s.L6a = "Borrow food, or rely on help from friends";
@@ -1337,8 +1334,31 @@ namespace IVAP.Syncer
                 {
                     s.S3d = "More than one room";
                 }
+
+                //Sync S11
+                if (s.S11.Contains("Food"))
+                {
+                    s.S11a = "Food";
+                }
+                if (s.S11.Contains("Space"))
+                {
+                    s.S11b = "Space";
+                }
+                if (s.S11.Contains("Wash"))
+                {
+                    s.S11c = "Wash";
+                }
+                if (s.S11.Contains("Cash"))
+                {
+                    s.S11d = "Cash";
+                }
+                if (s.S11.Contains("Other"))
+                {
+                    s.S11e = "Other";
+                }
                 synced.Add(s);
             }
+
             return synced;
         }
     }

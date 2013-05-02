@@ -36,6 +36,7 @@
             </Grid.RowDefinitions>
             <TextBox x:Name="fileTxtBox" Controls:TextboxHelper.ClearTextButton="False" Controls:TextboxHelper.Watermark="your csv file that is to be synced" Grid.Row="0"  />
             <Button Style="{DynamicResource SquareButtonStyle}" Content="select file" Grid.Row="1" Click="Button_Click"/>
+            <Label x:Name="countLabel" Content="" Grid.Row="2"/>
         </Grid>
         <Grid Grid.Row="2" Grid.Column="1">
             <Grid.RowDefinitions>

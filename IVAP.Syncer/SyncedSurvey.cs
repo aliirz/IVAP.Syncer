@@ -242,7 +242,7 @@ namespace IVAP.Syncer
 
         [CsvField(Name = "IDP:IO:GI:P7")]
         public string P7 { get; set; }
-
+       
         public string P7a { get; set; }
         public string P7b { get; set; }
         public string P7c { get; set; }
@@ -517,6 +517,9 @@ namespace IVAP.Syncer
         public string N3f { get; set; }
 
         [CsvField(Name = "IDP:IO:GI:N3Other")]
+        public string N3Other { get; set; }
+
+        [CsvField(Name = "IDP:IO:GI:N4")]
         public string N4 { get; set; }
 
         [CsvField(Name = "IDP:IO:GI:N5")]
@@ -670,6 +673,13 @@ namespace IVAP.Syncer
 
         [CsvField(Name = "IDP:IO:GI:S11")]
         public string S11 { get; set; }
+
+        public string S11a { get; set; }
+        public string S11b { get; set; }
+        public string S11c { get; set; }
+        public string S11d { get; set; }
+        public string S11e { get; set; }
+
 
         [CsvField(Name = "IDP:IO:GI:S11Other")]
         public string S11Other { get; set; }
